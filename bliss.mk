@@ -6,7 +6,7 @@ TARGET_SCREEN_WIDTH := 480
 TARGET_SCREEN_HEIGHT := 800
 
 # Release name
-PRODUCT_RELEASE_NAME := LG L Fino
-PRODUCT_NAME := cm_l70pds
+PRODUCT_RELEASE_NAME := LG L Lift
+PRODUCT_NAME := bliss_l70pds
 
 $(call inherit-product, device/lge/l70pds/full_l70pds.mk)
