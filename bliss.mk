@@ -1,5 +1,5 @@
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common BLISS stuff.
+$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 480
