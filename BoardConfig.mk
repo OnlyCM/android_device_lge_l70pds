@@ -23,7 +23,7 @@
 
 -include device/lge/msm8610-common/BoardConfigCommon.mk
 
-TARGET_KERNEL_CONFIG := l70pds_global_com_defconfig
+TARGET_KERNEL_CONFIG := L70pds_global_com_defconfig
 BOARD_CUSTOM_BOOTIMG_MK := device/lge/l70pds/mkbootimg.mk
 
 TARGET_LIBINIT_DEFINES_FILE := device/lge/l70pds/init/init_l70pds.c
