@@ -23,14 +23,26 @@
 
 -include device/lge/msm8610-common/BoardConfigCommon.mk
 
-TARGET_KERNEL_CONFIG := L70pds_global_com_defconfig
+TARGET_KERNEL_CONFIG := L70p_global_com_defconfig
 BOARD_CUSTOM_BOOTIMG_MK := device/lge/l70pds/mkbootimg.mk
 
 TARGET_LIBINIT_DEFINES_FILE := device/lge/l70pds/init/init_l70pds.c
 
 DEVICE_RESOLUTION := 480x800
 
-TARGET_OTA_ASSERT_DEVICE := l70pn,l70pds
+TARGET_OTA_ASSERT_DEVICE := l70pn,l70pds, l70p
+
+# BlissPop Config Flags
+BLISS_PIPE := true
+BLISSIFY := false
+BLISS_GRAPHITE := false
+TARGET_TC_ROM := 4.8
+TARGET_TC_KERNEL := 4.8
+TARGET_GCC_VERSION_EXP := $(TARGET_TC_ROM)
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := $(TARGET_TC_KERNEL)
+
+#SaberMod
+#-include vendor/bliss/config/sm.mk
 
 # Nfc
 BOARD_NFC_CHIPSET := pn547
