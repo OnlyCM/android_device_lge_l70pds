@@ -7,6 +7,6 @@ TARGET_SCREEN_HEIGHT := 800
 
 # Release name
 PRODUCT_RELEASE_NAME := LG L Lift
-PRODUCT_NAME := bliss_l70pds
+PRODUCT_NAME := bliss_l70p
 
-$(call inherit-product, device/lge/l70pds/full_l70pds.mk)
+$(call inherit-product, device/lge/l70pds/full_l70p.mk)
