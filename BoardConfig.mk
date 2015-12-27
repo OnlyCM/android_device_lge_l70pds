@@ -51,6 +51,6 @@ TARGET_KERNEL_CUSTOM_TOOLCHAIN := $(TARGET_TC_KERNEL)
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 
 # Releasetools
-TARGET_RELEASETOOLS_EXTENSIONS := device/lge/l70pds
+TARGET_RELEASETOOLS_EXTENSIONS := device/lge/l70p
 
--include vendor/lge/l70pds/BoardConfigVendor.mk
+-include vendor/lge/l70p/BoardConfigVendor.mk
