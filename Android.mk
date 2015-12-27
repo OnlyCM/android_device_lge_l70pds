@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-ifneq ($(filter l70pds,$(TARGET_DEVICE)),)
+ifneq ($(filter l70p,$(TARGET_DEVICE)),)
 
 LOCAL_PATH := $(call my-dir)
 
