@@ -46,7 +46,7 @@ PRODUCT_COPY_FILES += \
     #device/lge/l70p/prebuilt/etc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
     #device/lge/l70p/prebuilt/etc/nfcee_access.xml:system/etc/nfcee_access.xml
     device/lge/l70p/prebuilt/usr/keylayout/Generic-D290.kl:system/usr/keylayout/Generic-D290.kl \
-    device/lge/l70p/prebuilt/usr/keylayout/Generic-D295.kl:system/usr/keylayout/Generic-D295.kl \
+    #device/lge/l70p/prebuilt/usr/keylayout/Generic-D295.kl:system/usr/keylayout/Generic-D295.kl
     device/lge/l70p/fstab.msm8610:root/fstab.msm8610
 
 PRODUCT_LOCALES := es_ES
