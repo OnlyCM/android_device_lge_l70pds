@@ -101,7 +101,7 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
     } else {
         /* XXX */
         property_set("ro.product.device", "l70p");
-        property_set("ro.product.model", "Please write your model name to OnlyCM");
+        property_set("ro.product.model", "LG-D290");
         property_set("persist.radio.multisim.config", "");
         property_set("telephony.lteOnCdmaDevice", "0");
     }

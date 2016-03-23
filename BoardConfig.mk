@@ -23,22 +23,34 @@
 
 -include device/lge/msm8610-common/BoardConfigCommon.mk
 
-TARGET_KERNEL_CONFIG := l70pds_global_com_defconfig
-BOARD_CUSTOM_BOOTIMG_MK := device/lge/l70pds/mkbootimg.mk
+TARGET_KERNEL_CONFIG := l70pn_global_com_defconfig
+BOARD_CUSTOM_BOOTIMG_MK := device/lge/l70p/mkbootimg.mk
 
-TARGET_LIBINIT_DEFINES_FILE := device/lge/l70pds/init/init_l70pds.c
+TARGET_LIBINIT_DEFINES_FILE := device/lge/l70p/init/init_l70p.c
 
 DEVICE_RESOLUTION := 480x800
 
-TARGET_OTA_ASSERT_DEVICE := l70pn,l70pds
+TARGET_OTA_ASSERT_DEVICE := l70pn,l70pds,l70p
+
+# BlissPop Config Flags
+BLISS_PIPE := true
+BLISSIFY := false
+BLISS_GRAPHITE := false
+TARGET_TC_ROM := 4.8
+TARGET_TC_KERNEL := 4.8
+TARGET_GCC_VERSION_EXP := $(TARGET_TC_ROM)
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := $(TARGET_TC_KERNEL)
+
+#SaberMod
+#-include vendor/bliss/config/sm.mk
 
 # Nfc
-BOARD_NFC_CHIPSET := pn547
+#BOARD_NFC_CHIPSET := pn547
 
 #TWRP
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 
 # Releasetools
-TARGET_RELEASETOOLS_EXTENSIONS := device/lge/l70pds
+TARGET_RELEASETOOLS_EXTENSIONS := device/lge/l70p
 
--include vendor/lge/l70pds/BoardConfigVendor.mk
+-include vendor/lge/l70p/BoardConfigVendor.mk
